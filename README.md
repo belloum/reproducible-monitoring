@@ -5,7 +5,8 @@ our monitoring rules are concise and high-level, facilitating their evolution.
 
 This repository contains five files and a readme file:
 - makefile
-- the version of Allen that we used to execute our rules
+- src with the version of Allen that we used to execute our rules, Further information about Allen are found 
+in this link: https://github.com/NicVolanschi/Allen
 - dataset.csv a set of ambiant sensor data, collected over several months from a natural setting
 - log-analyses.aln contains a set of rules to detect activitives as well as sensor failures 
 - visualization.py this file allows a synoptic view of user activities. More specifically, this file contains the code source
@@ -14,14 +15,13 @@ to visualize the output of analysis rules for sensor failure and activity detect
 
 # Getting started
 
-1. You need to download src directory. Further information about Allen are found in this link: https://github.com/NicVolanschi/Allen
-2. Download the files of reproducibilitymonitoring repository    
-3. Open your terminal and go to the folder of the downlowded files
-4. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
+1. Download the files of reproducibilitymonitoring repository    
+2. Open your terminal and go to the folder of the downlowded files
+3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
 `make out\dataset`.
-5. An out folder is generated, it include the output of monitoring rules detecting activities and sensor failures 
-6. After this you can type `make dataset` from your terminal to generate the days number of platform/sensors failures
-7. Finally, you can visualize the activity information using the file visualization.py that contains scripts examples for 
+4. dataset file is generated. It contains the output of monitoring rules detecting activities and sensor failures 
+5. After this you can type `make dataset` from your terminal to generate the days number of platform/sensors failures
+6. Finally, you can visualize the activity information using the file visualization.py that contains scripts examples for 
 sleeping, outing, and toilet visit activity.
 
 N.B. For visulaization you need to convert the output rules files from Allen to .csv and then executing the script of 
