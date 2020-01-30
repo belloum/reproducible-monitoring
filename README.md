@@ -3,8 +3,9 @@ Here, we make publicly available: (1) a realistic set of sensor data collected f
 for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
 our monitoring rules are concise and high-level, facilitating their evolution.
 
-This repository contains four files and a readme file:
-- makefile  
+This repository contains five files and a readme file:
+- makefile
+- the version of Allen that we used to execute our rules
 - dataset.csv a set of ambiant sensor data, collected over several months from a natural setting
 - log-analyses.aln contains a set of rules to detect activitives as well as sensor failures 
 - visualization.py this file allows a synoptic view of user activities. More specifically, this file contains the code source
@@ -13,7 +14,7 @@ to visualize the output of analysis rules for sensor failure and activity detect
 
 # Getting started
 
-1. You need to download and install Allen by following this link: https://github.com/NicVolanschi/Allen
+1. You need to download src directory. Further information about Allen are found in this link: https://github.com/NicVolanschi/Allen
 2. Download the files of reproducibilitymonitoring repository    
 3. Open your terminal and go to the folder of the downlowded files
 4. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
