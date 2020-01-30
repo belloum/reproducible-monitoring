@@ -1,6 +1,6 @@
 # Reproducibile activity monitoring
-Here, we make publicly available: (1) a realistic set of sensor data collected from a smart home, and (2) concise rules 
-for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
+Here, we make publicly available: (1) a realistic set of sensor data collected from a smart home, and (2) a set of rules 
+to analyzing sensor data for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
 our monitoring rules are concise and high-level, facilitating their evolution.
 
 This repository contains five files and a readme file:
@@ -19,7 +19,7 @@ to visualize the output of analysis rules for sensor failure and activity detect
 2. Open your terminal and go to the folder of the downlowded files
 3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
 `make out\dataset`.
-4. dataset file is generated. It contains the output of monitoring rules detecting activities and sensor failures 
+4. A dataset file is generated. It contains the output of monitoring rules detecting activities and sensor failures 
 5. After this you can type `make dataset` from your terminal to generate the days number of platform/sensors failures
 6. Finally, you can visualize the activity information using the file visualization.py that contains scripts examples for 
 sleeping, outing, and toilet visit activity.
