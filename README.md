@@ -1,5 +1,5 @@
 # Reproducibile activity monitoring
-Here, we made publicly available: (1) a realistic set of sensor data collected from a smart home, and (2) analysis rules 
+Here, we make publicly available: (1) a realistic set of sensor data collected from a smart home, and (2) analysis rules 
 for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
 our monitoring rules are concise and high-level, facilitating their evolution.
 
