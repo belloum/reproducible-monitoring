@@ -1,5 +1,5 @@
 SRC=~/Downloads/Allen/src
-LOG=Logs-csv
+LOG=dataset.csv
 OPTQ=-q'/^EMeter_/>=20,/\.BatteryLevel$$/>=20'
 FAULTS=door_failure_1week bed_failure toilet_failure
 
@@ -7,7 +7,7 @@ FAULTS=door_failure_1week bed_failure toilet_failure
 	$(SRC)/allenc $<
 
 out/dataset: log-analyses.pm
-	cat $(LOG)/dataset.csv | \
+	cat $ dataset.csv | \
 		$(SRC)/allen $(OPTQ) log-analyses.pm | sort >$@
 
 out/dataset-%: out/dataset
