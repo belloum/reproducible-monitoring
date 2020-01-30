@@ -28,16 +28,14 @@ your choice that is contained in visualization.py
 
 # Documentation 
 
-[1] Nic Volanschi and Bernard Serpette. "AllenRV: an Extensible Monitor for Multiple Complex Specifications with High Reactivity --- Extended version".
-Extended version of [2], including a short programming tutorial as an Appendix.
-http://nic.volanschi.free.fr/papers/allen-rv19-extended.pdf
-
-[2] Nic Volanschi and Bernard Serpette. "AllenRV: an Extensible Monitor for Multiple Complex Specifications with High
-Reactivity". In RV'19 - The 19th International Conference on Runtime Verification.
-
-[3] Nic Volanschi, Bernard Serpette, and Charles Consel. "Implementing a Semi-causal Domain-Specific Language for 
+[1] Nic Volanschi, Bernard Serpette, and Charles Consel. "Implementing a Semi-causal Domain-Specific Language for 
 Context Detection over Binary Sensors". In GPCE 2018 - 17th ACM SIGPLAN International Conference on 
 Generative Programming: Concepts & Experiences.
 
-[4] Nic Volanschi, Bernard Serpette, Adrien Carteron, and Charles Consel. 
-"A Language for Online State Processing of Binary Sensors, Applied to Ambient Assisted Living". In Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2:4, 2018.
+[2] Nic Volanschi, Bernard Serpette, Adrien Carteron, and Charles Consel. 
+"A Language for Online State Processing of Binary Sensors, Applied to Ambient Assisted Living". 
+In Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 2:4, 2018.
+
+[3] Charles Consel, Lucile Dupuy, and Hélène Sauzéon. 2017. HomeAssist: An assisted living platform 
+for aging in place based on an interdisciplinary approach. 
+In International Conference on Applied Human Factors and Ergonomics. Springer, 129–140.
