@@ -1,7 +1,7 @@
 # Reproducibile activity monitoring
 Here, we make publicly available: (1) a realistic set of sensor data collected from a smart home, and (2) a set of rules 
-to analyzing sensor data for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
-our monitoring rules are concise and high-level, facilitating their evolution.
+to analyzing sensor data for activity monitoring. These rules are written with a domain-specific language nammed Allen (that you can find in this repository). 
+Because of the dedicated nature of this DSL, our monitoring rules are concise and high-level, facilitating their evolution.
 
 **Repository content:**
 
@@ -14,12 +14,17 @@ in this link: https://github.com/NicVolanschi/Allen
 - visualization.py this file allows a synoptic view of user activities. More specifically, this file contains the code source
 to visualize the output of analysis rules for sensor failure and activity detection. 
 
+# Installation 
+
+You need Perl with its core modules installed. The Allen code has been tested on Perl versions 5.18 and MacOS X, 
+but should work on other configurations as well.
+
+For the visualization we have run the python scripts on Anaconda Jupyter.
 
 # Getting started
 
 **Part 1:**
-1. Download the files of reproducibilitymonitoring repository, for the execution you need perl 
-(we used perl 5 version 18 over macOS 10.14.6)     
+1. Download the files of reproducibilitymonitoring repository    
 2. Open your terminal and go to the folder of the downlowded files
 3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
 `make out\dataset`.
@@ -32,8 +37,7 @@ is explained in part 2
 
 **Part 2:**
 
-We run the scripts that you find in visualization.py on Anaconda Jupyter.
-N.B. For visulaization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
+For visulaization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
 your choice that is contained in visualization.py.
 Before executing the scripts on Anaconda Jupyter, you will need to import these modules:
 
