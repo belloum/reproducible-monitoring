@@ -16,7 +16,7 @@ to visualize the output of analysis rules for sensor failure and activity detect
 
 # Getting started
 
-Part 1:
+**Part 1:**
 1. Download the files of reproducibilitymonitoring repository, for the execution you need perl 
 (we used perl 5 version 18 over macOS 10.14.6)     
 2. Open your terminal and go to the folder of the downlowded files
@@ -29,7 +29,8 @@ sleeping, outing, and toilet visit activity. The explination of how to run the v
 is explained in part 2
 
 
-Part 2:
+**Part 2:**
+
 We run the scripts that you find in visualization.py on Anaconda Jupyter.
 N.B. For visulaization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
 your choice that is contained in visualization.py.
