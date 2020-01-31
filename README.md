@@ -3,7 +3,8 @@ Here, we make publicly available: (1) a realistic set of sensor data collected f
 to analyzing sensor data for activity monitoring. These rules are written with a domain-specific language nammed Allen. Because of the dedicated nature of this DSL, 
 our monitoring rules are concise and high-level, facilitating their evolution.
 
-This repository contains:
+**Repository content:**
+
 - makefile
 - Allen/src with the version that we used to execute our rules. Further information about Allen are found 
 in this link: https://github.com/NicVolanschi/Allen
