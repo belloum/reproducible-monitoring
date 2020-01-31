@@ -5,7 +5,7 @@ our monitoring rules are concise and high-level, facilitating their evolution.
 
 This repository contains:
 - makefile
-- A src directory with the version of Allen that we used to execute our rules. Further information about Allen are found 
+- Allen/src with the version that we used to execute our rules. Further information about Allen are found 
 in this link: https://github.com/NicVolanschi/Allen
 - dataset.csv a set of ambiant sensor data, collected over several months from a natural setting
 - log-analyses.aln contains a set of rules to detect activitives as well as sensor failures 
