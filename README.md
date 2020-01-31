@@ -42,6 +42,7 @@ your choice that is contained in visualization.py.
 Before executing the scripts on Anaconda Jupyter, you will need to import these modules:
 
 `import pandas as pd`
+
 `from pandas import DataFrame`
 
 `from scipy import stats`
@@ -55,10 +56,6 @@ from matplotlib import pyplot as plt
 
 `import seaborn as sns`
 
-```
-import tkinter as tk
-from tkinter import filedialog
-```
 
 # Documentation 
 
