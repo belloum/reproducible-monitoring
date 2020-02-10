@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 my $usage = 'usage: allen [options] contexts
 where options may be:
