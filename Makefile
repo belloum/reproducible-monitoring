@@ -10,7 +10,10 @@ RULES=sleep_quiet toilet outing
 work/%.py: %.py
 	cp $< $@
 
-all: rules days scripts server
+all: work rules days scripts server
+
+work:
+	mkdir $@
 
 scripts: $(RULES:%=work/visualize_%.py)
 
