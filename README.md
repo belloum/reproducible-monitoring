@@ -17,10 +17,10 @@ in this link: https://github.com/NicVolanschi/Allen
 # Installation 
 
 You need Perl with its core modules installed. The Allen code has been tested on Perl versions 5.18 and MacOS X, 
-but should work on other configurations as well.
+but should work on other configurations as well. 
 
-The visualization part needs to run the python scripts on Anaconda Jupyter, packaged in a provided
-Docker container for your convenience.
+The visualization part needs to run the python scripts on Anaconda Jupyter. For your convenience, Anaconda Jupyter is provided as a
+Docker container (you need to have Docker installed to use it). Alternatively, you might already have Anaconda Jupyter installed.
 
 # Getting started
 
@@ -29,7 +29,7 @@ Docker container for your convenience.
 3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided: `make`.
 Various files have been generated under out/ and work/ subdirectories. They contain the output of monitoring rules detecting activities and sensor failures. Finally, a docker server has been invoked for visualizing the results.
   **NB: This step may last a few minutes.**
-4. Run the docker container with the Jupyter Anaconda visualization server: `make server`.
+4. Run the docker container with the Jupyter Anaconda visualization server: `make server`. Alternatively, you can directly run Ancaonda Jupyter from the browser if it is already installed.
 5. Copy/paste the indicated URL into your browser. This opens a Jupyter notebook web page.
 6. Click on the 'work' subdirectory within the notebook. 
 7. Click on the 'New' button in the upper right corner, and select 'Python 3' from the drop-down menu. This will open a new tab in the browser with an interactive Jupyter envrionment.
