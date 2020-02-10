@@ -32,7 +32,7 @@ Docker container for your convenience.
 5. Copy/paste the indicated URL into your browser. This opens a Jupyter notebook web page.
 6. Click on the 'work' subdirectory within the notebook. 
 7. Click on the 'New' button in the upper right corner, and select 'Python 3' from the drop-down menu. This will open a new tab in the browser with an interactive Jupyter envrionment.
-8. You can visualize the activity information using the scripts examples for toilet, outing, and sleeping activities, by typing into the command field: `%run visualize_toilet', `%run visualize_outing', and `%run visualize_sleep_quiet', respectively.
+8. You can visualize the activity information using the scripts examples for toilet, outing, and sleeping activities, by typing into the command field: `%run visualize_toilet`, `%run visualize_outing`, and `%run visualize_sleep_quiet`, respectively.
 
 
 # Documentation 
