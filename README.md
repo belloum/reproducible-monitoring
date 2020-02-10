@@ -24,11 +24,12 @@ Docker container for your convenience.
 
 # Getting started
 
-1. Download the files of reproducibilitymonitoring repository  (`git clone https://gitlab.inria.fr/rbelloum/reproducibilitymonitoring.git`)
-2. Go to the folder of the downloaded files (`cd reproducibilitymonitoring`)
-3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: `make`.
-4. Various files have been generated under out/ and work/ subdirectories. They contain the output of monitoring rules detecting activities and sensor failures. Finally, a docker server has been invoked for visualizing the results.
+1. Download the files of reproducibilitymonitoring repository: `git clone https://gitlab.inria.fr/rbelloum/reproducibilitymonitoring.git`.
+2. Go to the folder of the downloaded files: `cd reproducibilitymonitoring`.
+3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided: `make`.
+Various files have been generated under out/ and work/ subdirectories. They contain the output of monitoring rules detecting activities and sensor failures. Finally, a docker server has been invoked for visualizing the results.
   **NB: This step may last a few minutes.**
+4. Run the docker container with the Jupyter Anaconda visualization server: `make server`.
 5. Copy/paste the indicated URL into your browser. This opens a Jupyter notebook web page.
 6. Click on the 'work' subdirectory within the notebook. 
 7. Click on the 'New' button in the upper right corner, and select 'Python 3' from the drop-down menu. This will open a new tab in the browser with an interactive Jupyter envrionment.

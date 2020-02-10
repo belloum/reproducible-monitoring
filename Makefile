@@ -10,15 +10,12 @@ RULES=sleep_quiet toilet outing
 work/%.py: %.py
 	cp $< $@
 
-all: work rules days scripts server
+detect: work rules days scripts
 
 work:
 	mkdir $@
 
 scripts: $(RULES:%=work/visualize_%.py)
-
-server:
-	docker run -p 8888:8888 -e NB_USER=`id -n -u` -v `pwd`/work:/home/jovyan/work:rw jupyter/scipy-notebook:2c80cf3537ca
 
 out/dataset: log-analyses.pm
 	cat $ dataset.csv | \
@@ -34,6 +31,9 @@ work/days-%.csv: work/rule-%.csv
 rules: $(FAULTS:%=work/rule-%.csv) $(RULES:%=work/rule-%.csv)
 
 days: $(FAULTS:%=work/days-%.csv) 
+
+server:
+	docker run -p 8888:8888 -e NB_USER=`id -n -u` -v `pwd`/work:/home/jovyan/work:rw jupyter/scipy-notebook:2c80cf3537ca
 
 clean:
 	rm -f work/* out/* log-analyses.pm
