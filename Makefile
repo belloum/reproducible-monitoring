@@ -15,7 +15,7 @@ all: rules days scripts server
 scripts: $(RULES:%=work/visualize_%.py)
 
 server:
-	docker run -p 8888:8888 -v `pwd`/work:/home/jovyan/work:rw jupyter/scipy-notebook:2c80cf3537ca
+	docker run -p 8888:8888 -e NB_USER=`id -n -u` -v `pwd`/work:/home/jovyan/work:rw jupyter/scipy-notebook:2c80cf3537ca
 
 out/dataset: log-analyses.pm
 	cat $ dataset.csv | \
