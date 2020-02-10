@@ -19,42 +19,20 @@ to visualize the output of analysis rules for sensor failure and activity detect
 You need Perl with its core modules installed. The Allen code has been tested on Perl versions 5.18 and MacOS X, 
 but should work on other configurations as well.
 
-For the visualization we have run the python scripts on Anaconda Jupyter.
+The visualization part needs to run the python scripts on Anaconda Jupyter, packaged in a provided
+Docker container for your convenience.
 
 # Getting started
 
-**Part 1:**
-1. Download the files of reproducibilitymonitoring repository    
-2. Open your terminal and go to the folder of the downlowded files
-3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
-`make out/dataset`.
-4. A dataset file is generated. It contains the output of monitoring rules detecting activities and sensor failures 
-5. After this you can type `make dataset` from your terminal to generate the days number of platform/sensors failures
-6. Finally, you can visualize the activity information using the file visualization.py that contains scripts examples for 
-sleeping, outing, and toilet visit activity. The explanation of how to run the visualization and what tools you need,
-is explained in part 2
-
-
-**Part 2:**
-
-For visualization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
-your choice that is contained in visualization.py.
-Before executing the scripts on Anaconda Jupyter, you will need to import these modules:
-
-`import pandas as pd`
-
-`from pandas import DataFrame`
-
-`from scipy import stats`
-
-```
-from matplotlib import pyplot as plt 
-%matplotlib inline
-```
-
-`from scipy import stats`
-
-`import seaborn as sns`
+1. Download the files of reproducibilitymonitoring repository  (`git clone https://gitlab.inria.fr/rbelloum/reproducibilitymonitoring.git`)
+2. Open your terminal and go to the folder of the downloaded files (`cd reproducibilitymonitoring`)
+3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: `make`.
+4. Various files have been generated under out/ and work/ subdirectories. They contain the output of monitoring rules detecting activities and sensor failures. Finally, a docker server has been invoked for visualizing the results.
+  **NB: This step may last a few minutes.**
+5. Copy/paste the indicated URL into your browser. This opens a Jupyter notebook web page.
+6. Click on the 'work' subdirectory within the notebook. 
+7. Click on the 'New' button in the upper right corner, and select 'Python 3' from the drop-down menu. This will open a new tab in the browser with an interactive Jupyter envrionment.
+8. You can visualize the activity information using the scripts examples for toilet, outing, and sleeping activities, by typing into the command field: `\%run visualize_toilet', `\%run visualize_outing', and `\%run visualize_sleep_quiet', respectively.
 
 
 # Documentation 
