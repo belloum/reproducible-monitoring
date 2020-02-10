@@ -1,4 +1,4 @@
-SRC=~/Downloads/Allen/src
+SRC=Allen/src
 LOG=dataset.csv
 OPTQ=-q'/^EMeter_/>=20,/\.BatteryLevel$$/>=20'
 FAULTS=door_failure_1week bed_failure toilet_failure

@@ -27,17 +27,17 @@ For the visualization we have run the python scripts on Anaconda Jupyter.
 1. Download the files of reproducibilitymonitoring repository    
 2. Open your terminal and go to the folder of the downlowded files
 3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided by typing: 
-`make out\dataset`.
+`make out/dataset`.
 4. A dataset file is generated. It contains the output of monitoring rules detecting activities and sensor failures 
 5. After this you can type `make dataset` from your terminal to generate the days number of platform/sensors failures
 6. Finally, you can visualize the activity information using the file visualization.py that contains scripts examples for 
-sleeping, outing, and toilet visit activity. The explination of how to run the visualization and what tools you need,
+sleeping, outing, and toilet visit activity. The explanation of how to run the visualization and what tools you need,
 is explained in part 2
 
 
 **Part 2:**
 
-For visulaization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
+For visualization you need to convert the output rules files (generated in the out directory) from Allen to .csv and then executing the script of 
 your choice that is contained in visualization.py.
 Before executing the scripts on Anaconda Jupyter, you will need to import these modules:
 
