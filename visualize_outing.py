@@ -18,14 +18,14 @@ from tkinter import filedialog
 from pandas import DataFrame
 
 
-#Below script for toilet and/or outing
+#Below script for toilet activity
 
 log_entry = 'rule-outing.csv'
 hole_csv = 'days-door_failure_1week.csv'
 out_file = 'out.csv'
 result_file = 'out.csv'
-graph_title = 'Outing Ms. Dupont'
-label_y1 = 'Average duration in hours'
+graph_title = 'Outings'
+label_y1 = 'Average duration in minutes'
 label_y2 = 'Number of outings per month'
 figure = 'outing.pdf'
 folder = 'result'
@@ -81,10 +81,10 @@ door_hole_1week = pd.read_csv(hole_csv, delimiter =';', decimal=","
                               parse_dates=["date"], index_col="date")
 
 
-door_hole_1week.index =  door_hole_1week.index.strftime("%Y-%m")
+#door_hole_1week.index =  door_hole_1week.index.strftime("%Y-%m")
 
 #number of days where there was no failure
-#door_hole_1week = (30 - door_hole_1week)/35
+door_hole_1week = (30 - door_hole_1week)/35
 
 activity_dataset = activity_dataset.drop('date')
 activity_dataset = activity_dataset.loc[activity_dataset.index.dropna()]
@@ -118,8 +118,8 @@ result_activity['sem'] = result_activity['sem']/60
 
 
 result_activity.loc[result_activity['width'] == 0, 'on'] = 0
-result_activity.loc[result_activity['width'] > 0, 'on'] = -10
-
+result_activity.loc[result_activity['width'] > 0, 'on'] = -90
+plt.rcParams['figure.figsize'] = [9, 7]
 x = np.arange(12)
 plt.bar(x , result_activity['mean'], width=result_activity['width'], yerr=result_activity['sem']
         , color="#1f77b4"
