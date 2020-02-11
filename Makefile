@@ -35,5 +35,8 @@ days: $(FAULTS:%=work/days-%.csv)
 server:
 	docker run -p 8888:8888 -e NB_USER=`id -n -u` -v `pwd`/work:/home/jovyan/work:rw jupyter/scipy-notebook:2c80cf3537ca
 
+detect-indock:
+	docker run -w=/home -v `pwd`:/home:rw perl:5.30 make detect
+
 clean:
 	rm -f work/* out/* log-analyses.pm

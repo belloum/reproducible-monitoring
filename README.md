@@ -26,15 +26,16 @@ Docker container (you need to have Docker installed to use it). Alternatively, y
 
 1. Download the files of reproducibilitymonitoring repository: `git clone https://gitlab.inria.fr/rbelloum/reproducibilitymonitoring.git`.
 2. Go to the folder of the downloaded files: `cd reproducibilitymonitoring`.
-3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided: `make`.
+3. Execute activity monitoring rules (log-analyses.aln) over the public dataset (dataset.csv) that we provided: `make detect`.
 Various files have been generated under out/ and work/ subdirectories. They contain the output of monitoring rules detecting activities and sensor failures. Finally, a docker server has been invoked for visualizing the results.
-  **NB: This step may last a few minutes.**
-4. If you have Anaconda Jupyter already installed, you can directly run it from the browser, and proceed to step 6. Otherwise, run the docker container with the Jupyter Anaconda visualization server: `make server`. 
+ **NB: (1) This step may last a few minutes. (2) If this step fails, it means that Allen or make do not work well in your native environment. You can instead run this step in Docker: `make detect-indock` (you must have Docker installed).**
+4. Run the docker container with the Jupyter Anaconda visualization server: `make server`. Alternatively, if you have Anaconda Jupyter already installed, you can directly run it from the browser, and proceed to step 6.
 5. Copy/paste the indicated URL into your browser. This opens a Jupyter notebook web page.
 6. Click on the 'work' subdirectory within the notebook. 
 7. Click on the 'New' button in the upper right corner of the notebook, and select 'Python 3' from the drop-down menu. This will open a new tab in the browser with an interactive Jupyter envrionment.
 8. You can visualize the activity information using the scripts examples for toilet, outing, and sleeping activities, by typing into the command field: `%run visualize_toilet`, `%run visualize_outing`, or `%run visualize_sleep_quiet`, respectively. Once the command is typed in the field, click on the 'Run' button in the top part of the notebook. The corresponding diagram should appear in the notebook.
 
+To delete all the generated files and start anew: `make clean`.
 
 # Documentation 
 
